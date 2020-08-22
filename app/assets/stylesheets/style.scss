@@ -1,5 +1,26 @@
-p {
-  font-size: 1.5em;
+body,html {
+  height: 100%;
+  background-color: gray;
+  font-family: ui-serif;
+}
+
+body {
+  padding-top: 15px;
+}
+
+a {
   text-align: center;
+  text-decoration: none;
+  color: black;
   font-weight: bold;
+}
+
+p {
+  color: white;
+  font-weight: 400;
+}
+.footer {
+  color: lightgray;
+  opacity: 0.3;
+  text-align: center;
 }

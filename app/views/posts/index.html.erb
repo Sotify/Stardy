@@ -1,1 +1,5 @@
-<p>Hello World</p>
+<% @posts.each do |post| %>
+<p><%= post.name %></p>
+<p><%= post.title %></p>
+<p><%= post.text %></p>
+<% end %>
