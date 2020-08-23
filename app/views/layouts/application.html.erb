@@ -2,29 +2,21 @@
 <html>
   <head>
     <title>Stardy</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  
   <body>
     <header class="header">
-      <div class="header__bar row">
-      <h1 class="grid-6"><a href="/posts">Stardy</a></h1>
-        <div class="user_nav grid-6">
-          <a class="post" href="/posts/new">データをインプットする</a>
-        </div>
-      </div>
+      <h1 class="title"><a href="/posts">Stardy</a></h1>
+      <a href="/posts/new" class="btn btn-solid-silver">インプット</a>
     </header>
     
     <%= yield %>
     
-    <footer>
-      <footer class="footer">
-        Copyright Stardy 2020.
-      </footer>
+    
+  <footer>
+    <footer class="footer">
+      Copyright Stardy 2020.
     </footer>
   </body>
 </html>
